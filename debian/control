@@ -1,0 +1,87 @@
+Source: kyotocabinet
+Section: utils
+Priority: optinal
+Maintainer: Shawn Landden <shawnlandden@gmail.com>
+Build-Depends: debhelper (>= 9),
+ dpkg-dev (>= 1.16.1),
+ automake,
+ libtool (>= 2.2),
+ zlib1g-dev,
+ liblzma-dev,
+ liblzo2-dev
+Standards-Version: 3.9.3
+Vcs-Browser: http://git.debian.org/?p=collab-maint/kyoto-cabinet.git
+Vcs-Git: git://git.debian.org/collab-maint/kyoto-cabinet.git
+Homepage: http://fallabs.com/kyotocabinet/
+
+Package: libkyotocabinet16
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: a straightforward implementation of DBM
+ Kyoto Cabinet is a library of routines for managing a database. The
+ database is a simple data file containing records, each is a pair of
+ a key and a value. Every key and value is serial bytes with variable
+ length. Both binary data and character string can be used as a key and
+ a value. Each key must be unique within a database. There is neither
+ concept of data tables nor data types. Records are organized in
+ hash table or B+ tree.
+ .
+ This package contains the shared library.
+ 
+Package: libkyotocabinet16-dbg
+Section: debug
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: same
+Description: a straightforward implementation of DBM
+ Kyoto Cabinet is a library of routines for managing a database. The
+ database is a simple data file containing records, each is a pair of
+ a key and a value. Every key and value is serial bytes with variable
+ length. Both binary data and character string can be used as a key and
+ a value. Each key must be unique within a database. There is neither
+ concept of data tables nor data types. Records are organized in
+ hash table or B+ tree.
+ .
+ This package contains the debugging symbols for the shared library.
+
+Package: kyotocabinet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Multi-Arch: foreign
+Description: a straightforward implementation of DBM
+ Kyoto Cabinet is a library of routines for managing a database. The
+ database is a simple data file containing records, each is a pair of
+ a key and a value. Every key and value is serial bytes with variable
+ length. Both binary data and character string can be used as a key and
+ a value. Each key must be unique within a database. There is neither
+ concept of data tables nor data types. Records are organized in
+ hash table or B+ tree.
+ .
+ Kyoto Cabinet runs very fast. For example, elapsed time to store
+ one million records is 0.9 seconds for hash database, and 1.1 seconds
+ for B+ tree database. Moreover, the size of database is very small.
+ For example, overhead for a record is 16 bytes for hash database,
+ and 4 bytes for B+ tree database. Furthermore, scalability of
+ Kyoto Cabinet is great. The database size can be up to 8EB (9.22e18 bytes).
+ .
+ This package contains the test utilities.
+
+Package: libkyotocabinet-dev
+Section: libdevel
+Multi-Arch: same
+Architecture: any
+Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
+Description: a straightforward implementation of DBM
+ Kyoto Cabinet is a library of routines for managing a database. The
+ database is a simple data file containing records, each is a pair of
+ a key and a value. Every key and value is serial bytes with variable
+ length. Both binary data and character string can be used as a key and
+ a value. Each key must be unique within a database. There is neither
+ concept of data tables nor data types. Records are organized in
+ hash table or B+ tree.
+ .
+ This package contains the development headers.
+

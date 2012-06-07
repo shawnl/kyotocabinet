@@ -1,0 +1,5 @@
+kyotocabinet (1.2.76-1) UNRELEASED; urgency=low
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Shawn Landden <shawnlandden@gmail.com>  Thu, 07 Jun 2012 13:47:35 -0700
