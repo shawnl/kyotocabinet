@@ -1,5 +1,6 @@
-kyotocabinet (1.2.76-1) UNRELEASED; urgency=low
+kyotocabinet (1.2.76-1) unstable; urgency=low
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release. (Closes: #613450)
+  * Disable failing transaction tests for the directory hash database
 
- -- Shawn Landden <shawnlandden@gmail.com>  Thu, 07 Jun 2012 13:47:35 -0700
+ -- Shawn Landden <shawnlandden@gmail.com>  Thu, 07 Jun 2012 16:12:07 -0700
