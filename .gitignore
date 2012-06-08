@@ -12,4 +12,3 @@ config.*
 *~
 *.pc
 *.o
-*.patch
