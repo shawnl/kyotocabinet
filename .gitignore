@@ -1,3 +1,14 @@
+kc*
+libkyotocabinet.*
+
+casket
+Makefile
+check.in
+check.out
+config.*
+
+*debhelper.log
+
 *~
 *.pc
 *.o

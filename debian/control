@@ -1,6 +1,6 @@
 Source: kyotocabinet
 Section: utils
-Priority: optinal
+Priority: optional
 Maintainer: Shawn Landden <shawnlandden@gmail.com>
 Build-Depends: debhelper (>= 9),
  dpkg-dev (>= 1.16.1),
@@ -20,7 +20,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Description: a straightforward implementation of DBM
+Description: Straightforward implementation of DBM
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -34,9 +34,10 @@ Description: a straightforward implementation of DBM
 Package: libkyotocabinet16-dbg
 Section: debug
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Priority: extra
+Depends: libkyotocabinet16 (= ${binary:Version}), ${shlibs:Depends},${misc:Depends}
 Multi-Arch: same
-Description: a straightforward implementation of DBM
+Description: Straightforward implementation of DBM
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -51,7 +52,7 @@ Package: kyotocabinet
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: foreign
-Description: a straightforward implementation of DBM
+Description: Straightforward implementation of DBM
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -67,14 +68,14 @@ Description: a straightforward implementation of DBM
  and 4 bytes for B+ tree database. Furthermore, scalability of
  Kyoto Cabinet is great. The database size can be up to 8EB (9.22e18 bytes).
  .
- This package contains the test utilities.
+ This package contains the test utilities and the documentation.
 
 Package: libkyotocabinet-dev
 Section: libdevel
 Multi-Arch: same
 Architecture: any
 Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
-Description: a straightforward implementation of DBM
+Description: Straightforward implementation of DBM
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
