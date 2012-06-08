@@ -1,2 +1,3 @@
 usr/include/*.h
+usr/lib/*/libkyotocabinet.so
 usr/lib/*/pkgconfig/kyotocabinet.pc
