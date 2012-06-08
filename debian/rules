@@ -1,7 +1,6 @@
 #!/usr/bin/make -f
 
-DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
+include /usr/share/dpkg/architecture.mk
 
 # kyotocabinet uses 8 byte atomics by default
 # http://gcc.gnu.org/wiki/Atomic
