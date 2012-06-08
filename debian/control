@@ -20,7 +20,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Description: Straightforward implementation of DBM
+Description: Straightforward implementation of DBM - shared library
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -37,7 +37,7 @@ Architecture: any
 Priority: extra
 Depends: libkyotocabinet16 (= ${binary:Version}), ${shlibs:Depends},${misc:Depends}
 Multi-Arch: same
-Description: Straightforward implementation of DBM
+Description: Straightforward implementation of DBM - debugging symbols
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -52,7 +52,7 @@ Package: kyotocabinet
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: foreign
-Description: Straightforward implementation of DBM
+Description: Straightforward implementation of DBM - utilities
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -75,7 +75,7 @@ Section: libdevel
 Multi-Arch: same
 Architecture: any
 Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
-Description: Straightforward implementation of DBM
+Description: Straightforward implementation of DBM - development headers
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
