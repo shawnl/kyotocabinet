@@ -35,7 +35,7 @@ Package: libkyotocabinet16-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: libkyotocabinet16 (= ${binary:Version}), ${shlibs:Depends},${misc:Depends}
+Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
 Multi-Arch: same
 Description: Straightforward implementation of DBM - debugging symbols
  Kyoto Cabinet is a library of routines for managing a database. The
@@ -52,7 +52,7 @@ Package: kyotocabinet
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: foreign
-Description: Straightforward implementation of DBM - utilities
+Description: Straightforward implementation of DBM - utilities and doc
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
@@ -67,6 +67,10 @@ Description: Straightforward implementation of DBM - utilities
  For example, overhead for a record is 16 bytes for hash database,
  and 4 bytes for B+ tree database. Furthermore, scalability of
  Kyoto Cabinet is great. The database size can be up to 8EB (9.22e18 bytes).
+ .
+ Sponsored by the same company, Kyoto Cabinet is "[a] more powerful and
+ convenient library than Tokyo Cabinet [and] surpasses Tokyo Cabinet in
+ every aspect".
  .
  This package contains the test utilities and the documentation.
 
