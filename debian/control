@@ -52,7 +52,7 @@ Package: kyotocabinet-utils
 Architecture: any
 Depends: kyotocabinet-doc, ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: foreign
-Description: Straightforward implementation of DBM - utilities and doc
+Description: Straightforward implementation of DBM - utilities
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
  a key and a value. Every key and value is serial bytes with variable
