@@ -67,6 +67,7 @@ Package: kyotocabinet-doc
 Section: doc
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: libkyotocabinet-dev
 Multi-Arch: foreign
 Description: Straightforward implementation of DBM - docs
  Kyoto Cabinet is a library of routines for managing a database. The
