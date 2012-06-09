@@ -50,7 +50,8 @@ Description: Straightforward implementation of DBM - debugging symbols
 
 Package: kyotocabinet-utils
 Architecture: any
-Depends: kyotocabinet-doc, ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: kyotocabinet-doc
 Multi-Arch: foreign
 Description: Straightforward implementation of DBM - utilities
  Kyoto Cabinet is a library of routines for managing a database. The
