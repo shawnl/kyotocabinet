@@ -61,7 +61,9 @@ Description: Straightforward implementation of DBM - utilities
  concept of data tables nor data types. Records are organized in
  hash table or B+ tree.
  .
- This package contains the test utilities.
+ This package contains the kcutilmgr tool, used to compile kyotocabinet
+ language bindings without Debian patches applied, and well as testing
+ and debugging utilities.
 
 Package: kyotocabinet-doc
 Section: doc
