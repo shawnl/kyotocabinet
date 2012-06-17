@@ -10,8 +10,8 @@ Build-Depends: debhelper (>= 9),
  liblzma-dev,
  liblzo2-dev
 Standards-Version: 3.9.3
-Vcs-Browser: http://git.debian.org/?p=collab-maint/kyotocabinet.git
-Vcs-Git: git://git.debian.org/collab-maint/kyotocabinet.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/kyoto-cabinet.git
+Vcs-Git: git://git.debian.org/collab-maint/kyoto-cabinet.git
 Homepage: http://fallabs.com/kyotocabinet/
 
 Package: libkyotocabinet16
