@@ -12,6 +12,8 @@ ifeq (sh,$(DEB_HOST_ARCH_CPU))
 CONFIG_OPTS += --disable-atomic
 endif
 
+# Uncomment this while developig to disable lengthy tests
+#override_dh_auto_test:
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
@@ -23,9 +25,9 @@ $(CONFIG_OPTS)
 
 override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/tmp prefix=/usr install
-	ln -s $$(pwd)/debian/tmp/usr/share/doc/libkyotocabinet16 $$(pwd)/debian/tmp/usr/share/doc/libkyotocabinet16-dbg
-	ln -s $$(pwd)/debian/tmp/usr/share/doc/libkyotocabinet16 $$(pwd)/debian/tmp/usr/share/doc/libkyotocabinet16-dev
-	ln -s $$(pwd)/debian/tmp/usr/share/doc/libkyotocabinet16 $$(pwd)/debian/tmp/usr/share/doc/libkyotocabinet16-utils
+
+override_dh_installdocs:
+	dh_installdocs --link-doc=libkyotocabinet16
 
 override_dh_strip:
 	dh_strip --package=libkyotocabinet16 --dbg-package=libkyotocabinet16-dbg

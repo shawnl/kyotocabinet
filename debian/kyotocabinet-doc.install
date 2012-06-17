@@ -1,4 +1,3 @@
-usr/share/man/man1/*
-usr/share/doc/kyotocabinet/kyotocabinet.idl
-usr/share/doc/kyotocabinet/doc/*
-
+usr/share/man
+usr/share/doc/kyotocabinet/kyotocabinet.idl	usr/share/doc/libkyotocabinet16
+usr/share/doc/kyotocabinet/doc	usr/share/doc/libkyotocabinet16
