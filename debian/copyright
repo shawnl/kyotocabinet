@@ -2,7 +2,7 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Source: http://fallabs.com/kyotocabinet/
 
 Files: *
-Copyright: Copyright (C) 2009-2011 FAL Labs
+Copyright: Copyright © 2009-2011 FAL Labs
 License: GPL-3+ with "link" and "FOSS" exceptions
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU General Public
@@ -162,7 +162,7 @@ License: GPL-3+ with "link" and "FOSS" exceptions
    URL: http://www.graphlab.ml.cmu.edu/
 
 Files: debian/*
-Copyright: Copyright 2012 Shawn Landden <shawnlandden@gmail.com>
+Copyright: Copyright © 2012 Shawn Landden <shawnlandden@gmail.com>
 License: LGPL-3+ with "link" and "FOSS" exceptions
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU Lesser General Public
