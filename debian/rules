@@ -2,16 +2,6 @@
 
 include /usr/share/dpkg/architecture.mk
 
-# kyotocabinet uses 8 byte atomics by default
-# http://gcc.gnu.org/wiki/Atomic
-ifeq (arm,$(DEB_HOST_ARCH_CPU))
-CONFIG_OPTS += --disable-atomic
-endif
-
-ifeq (sh,$(DEB_HOST_ARCH_CPU))
-CONFIG_OPTS += --disable-atomic
-endif
-
 # Uncomment this while developig to disable lengthy tests
 #override_dh_auto_test:
 
