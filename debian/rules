@@ -2,9 +2,6 @@
 
 include /usr/share/dpkg/architecture.mk
 
-# Uncomment this while developig to disable lengthy tests
-#override_dh_auto_test:
-
 override_dh_auto_configure:
 	dh_auto_configure -- \
 --enable-zlib \
