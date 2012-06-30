@@ -6,8 +6,9 @@ kyotocabinet (1.2.76-2) unstable; urgency=low
   * include examples in doc package
   * rename -utils package to -bin to fit common practice
   * improve test for atomics to remove special casing, could be prettier however
+    - fixes FTBFS on 32-bit powerpc 
 
- -- Shawn Landden <shawnlandden@gmail.com>  Thu, 21 Jun 2012 20:49:19 -0700
+ -- Shawn Landden <shawnlandden@gmail.com>  Sat, 30 Jun 2012 10:39:24 -0700
 
 kyotocabinet (1.2.76-1) unstable; urgency=low
 
