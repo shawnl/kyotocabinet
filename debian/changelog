@@ -4,7 +4,6 @@ kyotocabinet (1.2.76-2) unstable; urgency=low
   * consolidate and clean up docs
     - fixed api/index.html link to work without a web server
   * include examples in doc package
-  * rename -utils package to -bin to fit common practice
   * improve test for atomics to remove special casing, could be prettier however
     - fixes FTBFS on 32-bit powerpc 
 
