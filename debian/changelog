@@ -1,3 +1,10 @@
+kyotocabinet (1.2.76-3) unstable; urgency=low
+
+  * workaround for dh_installdoc leaving empty folder is not necessary
+      on buildds
+
+ -- Shawn Landden <shawnlandden@gmail.com>  Sun, 01 Jul 2012 18:50:23 -0700
+
 kyotocabinet (1.2.76-2) unstable; urgency=low
 
   * include static library (libkyotocabinet.a) in -dev deb per §8.3
