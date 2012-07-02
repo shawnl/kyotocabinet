@@ -51,6 +51,8 @@ Description: Straightforward implementation of DBM - debugging symbols
 Package: kyotocabinet-utils
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: kyotocabinet-doc (<< 1.2.76-2)
+Breaks: kyotocabinet-doc (<< 1.2.76-2)
 Recommends: kyotocabinet-doc
 Multi-Arch: foreign
 Description: Straightforward implementation of DBM - utilities
