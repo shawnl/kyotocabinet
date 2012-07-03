@@ -1,3 +1,12 @@
+kyotocabinet (1.2.76-4) unstable; urgency=low
+
+  * use breaks/replaces for smooth upgrades following man page move
+      from -doc -> -utils
+  * do not unconditionally use -m64 when available (Closes: #680058)
+  * link with --as-needed on GNU/kFreeBSD as well as Linux
+
+ -- Shawn Landden <shawnlandden@gmail.com>  Fri, 06 Jul 2012 09:33:36 -0700
+
 kyotocabinet (1.2.76-3) unstable; urgency=low
 
   * workaround for dh_installdoc leaving empty folder is not necessary
