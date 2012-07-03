@@ -2,6 +2,10 @@
 
 include /usr/share/dpkg/architecture.mk
 
+ifneq (,$(findstring noopt,$(DEB_BUILD_OPTIONS)))
+CONFIG_OPTS += --disable-opt
+endif
+
 override_dh_auto_configure:
 	dh_auto_configure -- \
 --enable-zlib \
