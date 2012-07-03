@@ -1,5 +1,4 @@
-8-byte-atomic-test.patch
-0001-fix-up-link-in-docs-that-otherwise-needs-index.html-.patch
-0001-Disable-failing-transaction-tests-for-the-directory-.patch
-0001-disable-march-native.patch
-
+configure-fix-up-configure-test-to-handle-lack-of-8-.patch
+docs-fix-up-links-in-docs-that-otherwise-need-index..patch
+Disable-failing-transaction-tests-for-the-directory-.patch
+disable-march-native-don-t-build-64-bit-always-when-.patch

@@ -1,8 +1,6 @@
-From 1c058abae4ca93f294134f890c3baaa804efc337 Mon Sep 17 00:00:00 2001
 From: Shawn Landden <shawnlandden@gmail.com>
 Date: Thu, 7 Jun 2012 15:47:55 -0700
-Subject: [PATCH] Disable failing transaction tests for the directory hash
- database
+Subject: Disable failing transaction tests for the directory hash database
 
 From my tests, this doesn't fail on ext4 (but does on btrfs and tmpfs)
 I've heard reports of buildds wanting to move to btrfs so I'm keeping this.
@@ -27,5 +25,3 @@ index be4bdbb..5a9efc3 100644
  	$(RUNENV) $(RUNCMD) ./kcdirtest order -th 4 -rnd -etc -tc casket 500
  	$(RUNENV) $(RUNCMD) ./kcdirmgr check -onr casket
 -- 
-1.7.9.5
-
