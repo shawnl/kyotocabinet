@@ -36,6 +36,7 @@ Section: debug
 Architecture: any
 Priority: extra
 Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
+Provides: libkyocabinet-dbg
 Multi-Arch: same
 Description: Straightforward implementation of DBM - debugging symbols
  Kyoto Cabinet is a library of routines for managing a database. The
@@ -100,6 +101,7 @@ Section: libdevel
 Multi-Arch: same
 Architecture: any
 Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
+Provides: libkyotocabinet16-dev
 Description: Straightforward implementation of DBM - development headers
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
