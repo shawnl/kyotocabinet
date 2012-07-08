@@ -3,9 +3,17 @@ kyotocabinet (1.2.76-4) unstable; urgency=low
   * use breaks/replaces for smooth upgrades following man page move
       from -doc -> -utils
   * do not unconditionally use -m64 when available (Closes: #680058)
-  * link with --as-needed on GNU/kFreeBSD as well as Linux
+  * obey DEB_BUILD_OPTIONS=noopt of Policy 4.9.1
+  * disable -rpath linking per recommended practice
+  * provide convenience names (libkyotocabinet16-dev, libkyotocabinet-dbg)
+  * switch to xz (-2) compression for debs
+  * fix link to kyotoproducts.pdf to point to Internet
+  * GNU/kFreeBSD
+    - support kyotocabinet::getsysinfo() on GNU/kFreeBSD
+    - link with --as-needed on GNU/kFreeBSD as well as Linux
+  * include <unistd.h> in kccommon.h for gcc-4.7 compatibility
 
- -- Shawn Landden <shawnlandden@gmail.com>  Fri, 06 Jul 2012 09:33:36 -0700
+ -- Shawn Landden <shawnlandden@gmail.com>  Wed, 11 Jul 2012 13:12:43 -0700
 
 kyotocabinet (1.2.76-3) unstable; urgency=low
 
