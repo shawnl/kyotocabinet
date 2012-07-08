@@ -1,5 +1,6 @@
-configure-fix-up-configure-test-to-handle-lack-of-8-.patch
-docs-fix-up-links-in-docs-that-otherwise-need-index..patch
-Disable-failing-transaction-tests-for-the-directory-.patch
-disable-march-native-don-t-build-64-bit-always-when-.patch
-use-as-needed-on-GNU-kFreeBSD-as-well-as-Linux-disab.patch
+configure-8-byte-atomics.patch
+doc-index.html.patch
+test-disable-dir-db-test-fails-on-tmpfs-btrfs.patch
+configure-disable-march-native-agressive-m64.patch
+configure-GNU-kFreeBSD-and-disable-rpath.patch
+doc-kyotoproducts.pdf.patch

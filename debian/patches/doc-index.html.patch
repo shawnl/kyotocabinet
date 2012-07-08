@@ -1,14 +1,14 @@
 From: Shawn Landden <shawnlandden@gmail.com>
 Date: Tue, 3 Jul 2012 08:19:16 -0700
-Subject: docs: fix up links in docs that otherwise need index.html
- functionality
+Subject: doc: index.html
 
+fix up link in docs that otherwise needs index.html functionality
 ---
  doc/index.html |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/doc/index.html b/doc/index.html
-index 62aed07..a058f18 100644
+index b934dd9..17ff4bf 100644
 --- a/doc/index.html
 +++ b/doc/index.html
 @@ -72,7 +72,7 @@

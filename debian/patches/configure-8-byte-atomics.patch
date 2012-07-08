@@ -1,7 +1,8 @@
 From: Shawn Landden <shawnlandden@gmail.com>
 Date: Thu, 21 Jun 2012 20:34:28 -0700
-Subject: configure: fix up configure test to handle lack of 8 byte atomics
- correctly
+Subject: configure: 8 byte atomics
+
+fix up configure test to handle lack of 8 byte atomics correctly
 
 as is the case with all ARM targets currently
 ---
