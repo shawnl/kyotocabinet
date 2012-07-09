@@ -324,7 +324,7 @@ void getsysinfo(std::map<std::string, std::string>* strmap) {
       (*strmap)["mem_rss"] = strprintf("%lld", (long long)size);
     }
   }
-#elif defined(_SYS_FREEBSD_) || defined(_SYS_SUNOS_)
+#elif defined(_SYS_FREEBSD_) || defined(_SYS_SUNOS_) || defined(_SYS_GNUKFREEBSD_)
   _assert_(strmap);
   struct ::rusage rbuf;
   std::memset(&rbuf, 0, sizeof(rbuf));

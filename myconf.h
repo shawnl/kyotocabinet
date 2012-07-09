@@ -33,6 +33,11 @@
 #define _SYS_FREEBSD_
 #define _KC_OSNAME     "FreeBSD"
 
+#elif defined(__FreeBSD_kernel__) && defined(__GLIBC__)
+
+#define _SYS_GNUKFREEBSD_
+#define _KC_OSNAME     "GNU/kFreeBSD"
+
 #elif defined(__NetBSD__)
 
 #define _SYS_NETBSD_
