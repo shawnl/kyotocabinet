@@ -5,3 +5,4 @@ configure-disable-march-native-agressive-m64.patch
 configure-GNU-kFreeBSD-and-disable-rpath.patch
 doc-kyotoproducts.pdf.patch
 kfreebsd-support-getsysinfo-on-GNU-kFreeBSD.patch
+gcc-4.7.patch
