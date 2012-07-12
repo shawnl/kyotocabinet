@@ -11,7 +11,7 @@ as is the case with all ARM targets currently
  2 files changed, 42 insertions(+), 18 deletions(-)
 
 diff --git a/configure b/configure
-index a07063d..e8342cd 100755
+index a07063d..f41400f 100755
 --- a/configure
 +++ b/configure
 @@ -4012,25 +4012,29 @@ fi
@@ -54,13 +54,13 @@ index a07063d..e8342cd 100755
 +		  return EXIT_SUCCESS;
 +
 +	return EXIT_FAILURE;
-+}' | gcc -xc -o config.tmp - >/dev/null 2>&1; chmod +x config.tmp;
++}' | $CC -xc -o config.tmp - >/dev/null 2>&1; chmod +x config.tmp;
 +  if ./config.tmp
    then
      MYCPPFLAGS="$MYCPPFLAGS -D_MYGCCATOMIC"
      printf 'yes\n'
 diff --git a/configure.in b/configure.in
-index 7808806..84f155a 100644
+index 7808806..17650a4 100644
 --- a/configure.in
 +++ b/configure.in
 @@ -238,9 +238,29 @@ fi
@@ -91,7 +91,7 @@ index 7808806..84f155a 100644
 +		  return EXIT_SUCCESS;
 +
 +	return EXIT_FAILURE;
-+}' | gcc -xc -o config.tmp - >/dev/null 2>&1; chmod +x config.tmp;
++}' | $CC -xc -o config.tmp - >/dev/null 2>&1; chmod +x config.tmp;
 +  if ./config.tmp
    then
      MYCPPFLAGS="$MYCPPFLAGS -D_MYGCCATOMIC"
