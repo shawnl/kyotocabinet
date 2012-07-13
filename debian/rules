@@ -20,7 +20,7 @@ override_dh_auto_install:
 override_dh_installdocs:
 	#kyotocabinet-doc doc's created in install file, so this doesn't apply there
 	dh_installdocs --link-doc=libkyotocabinet16
-	# mega-lameness, seem to not be necessary on buildds, but with cowbuilder/pbuilder?
+	#Bug #679864
 	rm -rf $$(pwd)/debian/kyotocabinet-doc/usr/share/doc/libkyotocabinet16
 
 override_dh_strip:
