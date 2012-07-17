@@ -1,17 +1,18 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Mikio Hirabayashi <mikio@fallabs.com>
 Source: http://fallabs.com/kyotocabinet/
 
 Files: *
-Copyright: Copyright © 2009-2011 FAL Labs
+Copyright: © 2009-2011 FAL Labs
 License: GPL-3+ or FOSS Exception or Link Exception
 
 Files: debian/*
-Copyright: Copyright © 2012 Shawn Landden <shawnlandden@gmail.com>
+Copyright: © 2012 Shawn Landden <shawnlandden@gmail.com>
 License: GPL-3+ or FOSS Exception or Link Exception
 Comment:
  If you modify this program, you may extend the link and/or FOSS exceptions to
  your version, but you are not obligated to do so. If you do not wish to do so,
- delete one or both exception statements and/or files from your version.
+ delete one or both exception statements and associated files from your version.
 
 License: GPL-3+
  This program is free software; you can redistribute it
@@ -26,10 +27,7 @@ License: GPL-3+
  PURPOSE.  See the GNU General Public License for more
  details.
  .
- You should have received a copy of the GNU General Public
- License along with this program. If not, see <http://www.gnu.org/licenses/>.
- .
- On Debian GNU/Linux systems, the complete text of the GNU General
+ On Debian systems, the complete text of the GNU General
  Public License can be found in `/usr/share/common-licenses/GPL-3'.
 
 License: FOSS Exception
