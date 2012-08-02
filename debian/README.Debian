@@ -1,0 +1,7 @@
+kyotocabinet for Debian
+-----------------------
+armel users: If you get
+"A newer kernel is required to run this binary. (__kernel_cmpxchg64 helper)"
+with pre-3.1 Linux on <armv6k hardware, you either need to upgrade your kernel to 3.1+
+or rebuild this package without gcc atomics (--disable-atomics).
+ -- Shawn Landden <shawnlandden@gmail.com>  Thu, 02 Aug 2012 13:40:03 -0700
