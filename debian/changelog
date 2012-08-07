@@ -1,6 +1,9 @@
 kyotocabinet (1.2.76-5) UNRELEASED; urgency=low
 
-  * multiarch cross-building blocked on #681840, LP 923779
+  * Note that 1.2.76-4 supported cross-building
+     - multiarch cross-building blocked on #681840, and for
+         depencencies: LP 923779. Also: #682045 imp.
+  * Build in parallel.
 
  -- Shawn Landden <shawnlandden@gmail.com>  Mon, 16 Jul 2012 09:21:44 -0700
 
