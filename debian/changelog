@@ -1,4 +1,4 @@
-kyotocabinet (1.2.76-5) UNRELEASED; urgency=low
+kyotocabinet (1.2.76-5) unstable; urgency=low
 
   * Note that 1.2.76-4 supported cross-building
      - multiarch cross-building blocked on #681840, and for
