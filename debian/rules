@@ -18,10 +18,13 @@ override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/tmp prefix=/usr install
 
 override_dh_installdocs:
-	dh_installdocs --link-doc=libkyotocabinet16
+	#kyotocabinet-doc doc's created in install file, so this doesn't apply there
+	dh_installdocs --link-doc=libkyotocabinet16v5
+	# mega-lameness, seem to not be necessary on buildds, but with cowbuilder/pbuilder?
+	rm -rf $$(pwd)/debian/kyotocabinet-doc/usr/share/doc/libkyotocabinet16v5
 
 override_dh_strip:
-	dh_strip --package=libkyotocabinet16 --dbg-package=libkyotocabinet16-dbg
+	dh_strip --package=libkyotocabinet16v5 --dbg-package=libkyotocabinet16v5-dbg
 	dh_strip
 
 override_dh_installchangelogs:
@@ -33,8 +36,5 @@ override_dh_builddeb:
 override_dh_makeshlibs:
 	dh_makeshlibs -V
 
-override_dh_clean:
-	dh_clean config.tmp config.log
-
 %:
-	dh $@ -- --parallel
+	dh $@

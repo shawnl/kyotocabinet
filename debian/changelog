@@ -1,12 +1,28 @@
 kyotocabinet (1.2.76-5) unstable; urgency=low
 
+  * Fix NMU to use NULL instead of nullptr (See #811627)
+  * Awknowledge NMUs
   * Note that 1.2.76-4 supported cross-building
-     - multiarch cross-building blocked on #681840, and for
-         depencencies: LP 923779. Also: #682045 imp.
   * Build in parallel.
   * [f08d4dba] move <unistd.h> include for gcc-4.7 compat to <kcutil.h>
 
- -- Shawn Landden <shawnlandden@gmail.com>  Mon, 16 Jul 2012 09:21:44 -0700
+ -- Shawn Landden <slandden@gmail.com>  Sat, 21 Oct 2017 15:38:53 -0700
+
+kyotocabinet (1.2.76-4.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix incompatibility with C++14/GCC 6 (Closes: #811627)
+
+ -- Andreas Stührk <andy@hammerhartes.de>  Sat, 24 Sep 2016 17:58:05 +0200
+
+kyotocabinet (1.2.76-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Steve Langasek ]
+  * Rename library packages for g++5 ABI transition.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 15 Aug 2015 12:16:02 +0200
 
 kyotocabinet (1.2.76-4) unstable; urgency=low
 

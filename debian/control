@@ -5,10 +5,8 @@ Maintainer: Shawn Landden <shawnlandden@gmail.com>
 Build-Depends: debhelper (>= 9),
  dpkg-dev (>= 1.16.1),
  automake,
-# not recompiled:
-# dh-autoreconf,
-# libtool,
- zlib1g-dev | libz-dev,
+ libtool (>= 2.2),
+ zlib1g-dev,
  liblzma-dev,
  liblzo2-dev
 Standards-Version: 3.9.3
@@ -16,12 +14,14 @@ Vcs-Browser: http://git.debian.org/?p=collab-maint/kyoto-cabinet.git
 Vcs-Git: git://git.debian.org/collab-maint/kyoto-cabinet.git
 Homepage: http://fallabs.com/kyotocabinet/
 
-Package: libkyotocabinet16
+Package: libkyotocabinet16v5
 Section: libs
 Architecture: any
-Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Conflicts: libkyotocabinet16
+Replaces: libkyotocabinet16
 Description: Straightforward implementation of DBM - shared library
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
@@ -33,13 +33,13 @@ Description: Straightforward implementation of DBM - shared library
  .
  This package contains the shared library.
  
-Package: libkyotocabinet16-dbg
+Package: libkyotocabinet16v5-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Multi-Arch: same
-Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
+Depends: libkyotocabinet16v5 (= ${binary:Version}), ${misc:Depends}
 Provides: libkyocabinet-dbg
+Multi-Arch: same
 Description: Straightforward implementation of DBM - debugging symbols
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
@@ -53,11 +53,11 @@ Description: Straightforward implementation of DBM - debugging symbols
 
 Package: kyotocabinet-utils
 Architecture: any
-Multi-Arch: foreign
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: kyotocabinet-doc
 Replaces: kyotocabinet-doc (<< 1.2.76-2)
 Breaks: kyotocabinet-doc (<< 1.2.76-2)
+Recommends: kyotocabinet-doc
+Multi-Arch: foreign
 Description: Straightforward implementation of DBM - utilities
  Kyoto Cabinet is a library of routines for managing a database. The
  database is a simple data file containing records, each is a pair of
@@ -74,7 +74,7 @@ Description: Straightforward implementation of DBM - utilities
 Package: kyotocabinet-doc
 Section: doc
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: libkyotocabinet-dev
 Description: Straightforward implementation of DBM - docs
  Kyoto Cabinet is a library of routines for managing a database. The
@@ -102,7 +102,10 @@ Package: libkyotocabinet-dev
 Section: libdevel
 Multi-Arch: same
 Architecture: any
-Depends: libkyotocabinet16 (= ${binary:Version}), ${misc:Depends}
+Depends: libkyotocabinet16v5 (= ${binary:Version}), ${misc:Depends},
+ zlib1g-dev,
+ liblzma-dev,
+ liblzo2-dev
 Provides: libkyotocabinet16-dev
 Description: Straightforward implementation of DBM - development headers
  Kyoto Cabinet is a library of routines for managing a database. The
