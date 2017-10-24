@@ -6,4 +6,4 @@ doc-kyotoproducts.pdf.patch
 kfreebsd.patch
 gcc-4.7.patch
 cpp-14.patch
-
+debug.patch

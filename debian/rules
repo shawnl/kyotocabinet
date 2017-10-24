@@ -7,6 +7,7 @@ CONFIG_OPTS += --disable-opt
 endif
 
 override_dh_auto_configure:
+	autoconf
 	dh_auto_configure -- \
 --enable-zlib \
 --enable-lzo \
