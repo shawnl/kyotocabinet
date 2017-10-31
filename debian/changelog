@@ -6,6 +6,7 @@ kyotocabinet (1.2.76-5) unstable; urgency=low
   * Build in parallel.
   * [f08d4dba] move <unistd.h> include for gcc-4.7 compat to <kcutil.h>
   * Actually build with debug symbols
+  * Set git url to gitlab
 
  -- Shawn Landden <slandden@gmail.com>  Sat, 21 Oct 2017 15:38:53 -0700
 
