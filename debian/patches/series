@@ -7,3 +7,6 @@ kfreebsd.patch
 gcc-4.7.patch
 cpp-14.patch
 debug.patch
+0001-KT-10-Swap-base64-with-Google-s-base64.patch
+0002-KT-9-support-faster-snprintf.patch
+0003-Add-lzo-option-to-inform-and-load-functions.patch

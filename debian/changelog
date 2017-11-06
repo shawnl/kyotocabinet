@@ -3,10 +3,13 @@ kyotocabinet (1.2.76-5) unstable; urgency=low
   * Fix NMU to use NULL instead of nullptr (See #811627)
   * Awknowledge NMUs
   * Note that 1.2.76-4 supported cross-building
-  * Build in parallel.
   * [f08d4dba] move <unistd.h> include for gcc-4.7 compat to <kcutil.h>
   * Actually build with debug symbols
   * Set git url to gitlab
+  * Include cloudflare patches https://github.com/cloudflare/kyotocabinet
+    - KT-10-Swap-base64-with-Google-s-base64.patch
+    - KT-9-support-faster-snprintf.patch
+    - Add-lzo-option-to-inform-and-load-functions.patch
 
  -- Shawn Landden <slandden@gmail.com>  Sat, 21 Oct 2017 15:38:53 -0700
 
