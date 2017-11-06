@@ -10,6 +10,7 @@ kyotocabinet (1.2.76-5) unstable; urgency=low
     - KT-10-Swap-base64-with-Google-s-base64.patch
     - KT-9-support-faster-snprintf.patch
     - Add-lzo-option-to-inform-and-load-functions.patch
+  * Debhelper 8 -> 10
 
  -- Shawn Landden <slandden@gmail.com>  Sat, 21 Oct 2017 15:38:53 -0700
 
