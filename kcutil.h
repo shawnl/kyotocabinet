@@ -18,6 +18,9 @@
 
 #include <kccommon.h>
 
+extern "C" {
+#include <unistd.h>
+}
 
 namespace kyotocabinet {                 // common namespace
 
