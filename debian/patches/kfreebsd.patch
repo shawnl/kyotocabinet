@@ -8,11 +8,11 @@ Subject: [PATCH] kfreebsd: support getsysinfo() on GNU/kFreeBSD
  myconf.h  |    5 +++++
  2 files changed, 6 insertions(+), 1 deletion(-)
 
-diff --git a/kcutil.cc b/kcutil.cc
-index f46c6f5..c2d7e81 100644
---- a/kcutil.cc
-+++ b/kcutil.cc
-@@ -323,7 +323,7 @@ void getsysinfo(std::map<std::string, std::string>* strmap) {
+Index: kyoto-cabinet/kcutil.cc
+===================================================================
+--- kyoto-cabinet.orig/kcutil.cc
++++ kyoto-cabinet/kcutil.cc
+@@ -324,7 +324,7 @@ void getsysinfo(std::map<std::string, st
        (*strmap)["mem_rss"] = strprintf("%lld", (long long)size);
      }
    }
@@ -21,10 +21,10 @@ index f46c6f5..c2d7e81 100644
    _assert_(strmap);
    struct ::rusage rbuf;
    std::memset(&rbuf, 0, sizeof(rbuf));
-diff --git a/myconf.h b/myconf.h
-index 3bb8dd2..c7df16e 100644
---- a/myconf.h
-+++ b/myconf.h
+Index: kyoto-cabinet/myconf.h
+===================================================================
+--- kyoto-cabinet.orig/myconf.h
++++ kyoto-cabinet/myconf.h
 @@ -33,6 +33,11 @@
  #define _SYS_FREEBSD_
  #define _KC_OSNAME     "FreeBSD"
@@ -37,6 +37,3 @@ index 3bb8dd2..c7df16e 100644
  #elif defined(__NetBSD__)
  
  #define _SYS_NETBSD_
--- 
-1.7.9.5
-
