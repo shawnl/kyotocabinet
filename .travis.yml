@@ -1,0 +1,21 @@
+language: c
+
+addons:
+    apt:
+        packages:
+            - debhelper
+            - dpkg-dev
+            - automake
+            - autoconf
+            - libtool
+            - zlib1g-dev
+            - liblzma-dev
+            - liblzo2-dev 
+
+before_script: autoconf
+
+script:
+    - ./configure --enable-zlib --enable-lzo --enable-lzma --prefix=/usr
+    - make -j20
+    - make check
+
