@@ -1,11 +1,12 @@
-0001-KT-10-Swap-base64-with-Google-s-base64.patch
-0002-KT-9-support-faster-snprintf.patch
 configure-8-byte-atomics.patch
 doc-index.html.patch
 configure-disable-march-native-agressive-m64.patch
 configure-GNU-kFreeBSD-and-disable-rpath.patch
 doc-kyotoproducts.pdf.patch
 kfreebsd.patch
+gcc-4.7.patch
 cpp-14.patch
 debug.patch
-gcc-4.7.patch
+0001-KT-10-Swap-base64-with-Google-s-base64.patch
+0002-KT-9-support-faster-snprintf.patch
+0003-Add-lzo-option-to-inform-and-load-functions.patch
